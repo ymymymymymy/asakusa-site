@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- reset.css destyle -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#about">浅草とは</a></li>
+          <li><a href="#festival"></a>イベント</li>
+
+          <li class="has-child">
+            <a href="#spot">観光名所</a>
+            <ul>
+              <li><a href="#">文化・体験</a></li>
+              <li><a href="#">食</a></li>
+              <li><a href="#">穴場</a></li>
+            </ul>
+          </li>
+          <li class="has-child">
+            <a href="#course">浅草散歩</a>
+            <ul>
+              <li><a href="">定番コース</a></li>
+              <li><a href="">食満喫コース</a></li>
+              <li><a href="">体験コース</a></li>
+              <li><a href="">穴場コース</a></li>
+            </ul>
+          </li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#">アクセス</a></li>
+        </ul>
+      </nav>
+      <div class="header_slider">
+        <div class="slider_content">
+          <div class="slider_item">
+            <div class="slider_img">
+              <img src="./image_each/main1.png" alt="" />
+            </div>
+            <button class="slider_button">コース</button>
+          </div>
+          <div class="slider_item">
+            <div class="slider_img">
+              <img src="./image_each/main2.png" alt="" />
+            </div>
+            <button class="slider_button">コース</button>
+          </div>
+          <div class="slider_item">
+            <div class="slider_img">
+              <img src="./image_each/main3.png" alt="" />
+            </div>
+            <button class="slider_button">コース</button>
+          </div>
+          <div class="slider_item">
+            <div class="slider_img">
+              <img src="./image_each/main4.png" alt="" />
+            </div>
+            <button class="slider_button">コース</button>
+          </div>
+          <div class="slider_item">
+            <div class="slider_img">
+              <img src="./image_each/main5.png" alt="" />
+            </div>
+            <button class="slider_button">コース</button>
+          </div>
+          <div class="slider_item">
+            <div class="slider_img">
+              <img src="./image_each/main6.png" alt="" />
+            </div>
+            <button class="slider_button">コース</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div class="about_content content">
+          <div class="about_item">
+            <div class="about_img">
+              <img src="./image_each/about1.png" alt="" />
+            </div>
+            <h2 class="about_text">浅草について</h2>
+          </div>
+          <div class="about_item">
+            <div class="about_img">
+              <img src="./image_each/about2.png" alt="" />
+            </div>
+            <h2 class="about_text">観光案内</h2>
+          </div>
+          <div class="about_item">
+            <div class="about_img">
+              <img src="./image_each/about3.png" alt="" />
+            </div>
+            <h2 class="about_text">四季のイベント</h2>
+          </div>
+          <div class="about_item">
+            <div class="about_img">
+              <img src="./image_each/about4.png" alt="" />
+            </div>
+            <h2 class="about_text">お土産</h2>
+          </div>
+        </div>
+      </section>
+      <section id="festival">
+        <div class="festival_content content">
+          <h1 class="section_title">浅草のお祭り</h1>
+          <div class="fes_item">
+            <p class="fes_title">浅草サンバカーニバル</p>
+            <div class="fes_img">
+              <img src="./image_each/event1.jpg" alt="" />
+            </div>
+            <div class="fes_texts">
+              <p class="fes_text">
+                令和6年9月15日(日)　12時～17時<br />
+                地域の観光開発・活性化を目的に昭和56年から始まった、夏のフィナーレの
+                一大イベントです。近年は毎年50万人のお客様で賑わうにまでに成長しました。
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+          </div>
+          <div class="fes_item">
+            <p class="fes_title">隅田川花火大会</p>
+            <div class="fes_img">
+              <img src="./image_each/event2.jpg" alt="" />
+            </div>
+            <div class="fes_texts">
+              <p class="fes_text">
+                令和6年7月27日(土)　19時～20時30分<br />
+                江戸時代に八代将軍徳川吉宗が打ち上げた「両国川開きの花火」を起源とする
+                日本最古の花火大会。東京の夏の夜空を国内最大級20000発の花火が彩ります。
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+          </div>
+          <div class="fes_item">
+            <p class="fes_title">三社祭</p>
+            <div class="fes_img">
+              <img src="./image_each/event3.jpg" alt="" />
+            </div>
+            <div class="fes_texts">
+              <p class="fes_text">
+                令和6年5月17日(金)〜5月19日(日)<br />
+                江戸風情を残しつつ勇壮且つ華やかな神輿渡御を主として、三日間に亘り
+                約百八十万人の人出を数える日本を代表する祭礼です。
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+          </div>
+          <button class="btn btn_big">年間イベントスケジュールはこちら</button>
+        </div>
+      </section>
+      <section id="spot">
+        <div class="spot_content content">
+          <h1 class="section_title">観光名所</h1>
+          <div class="spot_title">土地を訪ねる</div>
+          <div class="spot_item">
+            <div class="spot_img">
+              <img src="./image_each/sub1.png" alt="" />
+            </div>
+            <p class="spot_text">文化・体験</p>
+          </div>
+          <div class="spot_item">
+            <div class="spot_img">
+              <img src="./image_each/sub2.png" alt="" />
+            </div>
+            <p class="spot_text">食</p>
+          </div>
+          <div class="spot_item">
+            <div class="spot_img">
+              <img src="./image_each/sub3.png" alt="" />
+            </div>
+            <p class="spot_text">穴場</p>
+          </div>
+        </div>
+      </section>
+      <section id="course">
+        <div class="course_content content">
+          <h1 class="section_title">浅草さんぽ</h1>
+          <div class="course_items">
+            <div class="course_item">
+              <h2 class="course_title">
+                初めての浅草！1日で丸ごと楽しむ定番コース
+              </h2>
+              <div class="course_img">
+                <img src="./image_each/content1.jpg" alt="" />
+              </div>
+              <p class="course_text">
+                浅草を1日で楽しむ観光モデルコースをご紹介！
+                都内最古の寺院「浅草寺」を始めとした、浅草観光に欠かせない神社やお寺などを回る日帰りモデルコースをお届けします！インスタ映えスポット情報や半日で浅草からスカイツリーを巡るモデルコースもお届け！
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+            <div class="course_item">
+              <h2 class="course_title">
+                【仲見世通り】ご当地グルメ＆おやつ満喫コース
+              </h2>
+              <div class="course_img">
+                <img src="./image_each/content2.jpg" alt="" />
+              </div>
+              <p class="course_text">
+                活気あふれる浅草寺の表参道「仲見世通り」
+                香りにつられてついお参り前に寄り道したくなるおやつのお店が目白押しです。江戸時代から続く賑やかな商店街で美味しいものを巡るコースをご紹介します！
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+            <div class="course_item">
+              <h2 class="course_title">気軽にものづくり体験コース</h2>
+              <div class="course_img">
+                <img src="./image_each/content4.jpg" alt="" />
+              </div>
+              <p class="course_text">
+                【 張り子の絵付け体験】 だるま・招き猫・狐のお面を作ろう！
+                浅草で話題の日本文化体験カフェで縁起物の張り子をオリジナルデザインでペイントしてみませんか？
+                張り子は中が空洞でとても軽いので、旅行のお土産としておすすめです♪
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+            <div class="course_item">
+              <h2 class="course_title">
+                浅草通の方に！地元の人しか知らない穴場コース
+              </h2>
+              <div class="course_img">
+                <img src="./image_each/content4.jpg" alt="" />
+              </div>
+              <p class="course_text">
+                『浅草文化観光センター』は夜景の穴場スポット！
+                雷門の向かいに位置する、浅草の観光案内施設『浅草文化観光センター』。デートの締めくくりにぴったりな注目の穴場スポット。浅草ならではの情緒あふれる夜景にふたりで酔いしれてみては♪
+              </p>
+              <button class="btn btn_small">詳しくはこちら</button>
+            </div>
+          </div>
+          <button class="btn btn_big">すべての観光コースはこちら</button>
+        </div>
+      </section>
+      <section id="news">
+        <div class="news_content content">
+          <h1 class="section_title">おしらせ</h1>
+
+          <div class="news_items">
+            <div class="news_item">
+              <div class="news_img">
+                <img src="./image_each/news1.jpg" alt="" />
+              </div>
+              <div class="news_texts">
+                <div class="news_info">
+                  <p class="date">2024/07/16</p>
+                  <p class="tag">イベント</p>
+                </div>
+                <p class="news_text">浅草公会堂の公演情報</p>
+              </div>
+            </div>
+            <div class="news_item">
+              <div class="news_img">
+                <img src="./image_each/news2.jpg" alt="" />
+              </div>
+              <div class="news_texts">
+                <div class="news_info">
+                  <p class="date">2024/06/02</p>
+                  <p class="tag">文化・体験</p>
+                </div>
+                <p class="news_text">
+                  隅田川とうろう流し 2024年8月10日<br />
+                  自分で流す「とうろう」の事前受付開始
+                </p>
+              </div>
+            </div>
+            <div class="news_item">
+              <div class="news_img">
+                <img src="./image_each/news3.jpg" alt="" />
+              </div>
+              <div class="news_texts">
+                <div class="news_info">
+                  <p class="date">2024/07/09</p>
+                  <p class="tag">文化・体験</p>
+                </div>
+                <p class="news_text">
+                  令和６年とうろう流し<br />ボランティアスタッフ募集
+                </p>
+              </div>
+            </div>
+            <div class="news_item">
+              <div class="news_img">
+                <img src="./image_each/news4.jpg" alt="" />
+              </div>
+              <div class="news_texts">
+                <div class="news_info">
+                  <p class="date">2024/05/27</p>
+                  <p class="tag">文化・体験</p>
+                </div>
+                <p class="news_text">
+                  浅草寺四万六千日「ほおずき市」<br />2024年7月9日(火),10日(水)
+                </p>
+              </div>
+            </div>
+            <div class="news_item">
+              <div class="news_img">
+                <img src="./image_each/news5.jpg" alt="" />
+              </div>
+              <div class="news_texts">
+                <div class="news_info">
+                  <p class="date">2024/07/04</p>
+                  <p class="tag">文化・体験</p>
+                </div>
+                <p class="news_text">
+                  下町七夕まつり 2024年 7月4日〜8日<br />
+                  かっぱ橋本通りから国際通りまで
+                </p>
+              </div>
+            </div>
+            <div class="news_item">
+              <div class="news_img">
+                <img src="./image_each/news6.jpg" alt="" />
+              </div>
+              <div class="news_texts">
+                <div class="news_info">
+                  <p class="date">2024/05/17</p>
+                  <p class="tag">イベント</p>
+                </div>
+                <p class="news_text">
+                  令和6年 三社祭をJCOMがYouTubeで<br />ライブ配信！
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn_big">お知らせ一覧はこちら</button>
+        </div>
+      </section>
+      <section id="theme">
+        <div class="theme_content content">
+          <h1 class="section_title">テーマから探す</h1>
+
+          <div class="theme_items">
+            <div class="theme_item">
+              <div class="theme_img">
+                <img src="./image_each/teama1.jpg" alt="" />
+              </div>
+              <h2 class="theme_text">お祭り</h2>
+            </div>
+            <div class="theme_item">
+              <div class="theme_img">
+                <img src="./image_each/teama2.jpg" alt="" />
+              </div>
+              <h2 class="theme_text">食べ物</h2>
+            </div>
+            <div class="theme_item">
+              <div class="theme_img">
+                <img src="./image_each/teama3.jpg" alt="" />
+              </div>
+              <h2 class="theme_text">体験</h2>
+            </div>
+            <div class="theme_item">
+              <div class="theme_img">
+                <img src="./image_each/teama4.jpg" alt="" />
+              </div>
+              <h2 class="theme_text">お土産</h2>
+            </div>
+            <div class="theme_item">
+              <div class="theme_img">
+                <img src="./image_each/teama5.jpg" alt="" />
+              </div>
+              <h2 class="theme_text">宿泊施設</h2>
+            </div>
+            <div class="theme_item">
+              <div class="theme_img">
+                <img src="./image_each/teama6.jpg" alt="" />
+              </div>
+              <h2 class="theme_text">アクセス</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_content">
+        <div class="footer_img"><img src="./image_each/logo.png" alt="" /></div>
+        <div class="footer_list">
+          <a href="" class="list_item">よくあるご質問</a>
+          <a href="" class="list_item">お問い合わせ</a>
+          <a href="" class="list_item">パンフレット</a>
+          <a href="" class="list_item">アクセス情報</a>
+          <a href="" class="list_item">個人情報保護方針</a>
+          <a href="" class="list_item">サイトマップ</a>
+        </div>
+        <div>
+          <div class="footer_menu">
+            <a href="" class="menu_item">浅草とは</a>
+            <a href="" class="menu_item">四季のイベント</a>
+            <a href="" class="menu_item">観光名所</a>
+            <a href="" class="menu_item">浅草散歩</a>
+            <a href="" class="menu_item">アクセス</a>
+            <a href="" class="menu_item">お知らせ</a>
+          </div>
+          <div class="footer_corporate">
+            <p>一般社団法人　浅草観光連盟</p>
+            <p>住所：東京都台東区浅草1-34-73階</p>
+            <p>TEL：03-3844-1221</p>
+          </div>
+        </div>
+
+        <div class="footer_sns">
+          <img src="./image_each/Instagram_Glyph_Black.png" alt="x" />
+          <img src="./image_each/logo-black.png" alt="instagram" />
+          <img src="./image_each/icons8-facebook-480.png" alt="facebook" />
+        </div>
+      </div>
+      <p class="copyright">
+        copyright© <a href="#">浅草観光</a>ガイド All rights reserved
+      </p>
+    </footer>
+  </body>
+</html>
