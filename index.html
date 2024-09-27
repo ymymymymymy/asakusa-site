@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- reset.css destyle -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
-    />
+    <link rel="stylesheet" href="./css/reset.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,79 +14,119 @@
       rel="stylesheet"
     />
     <!-- style -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <div class="header_logo"></div>
+      <div class="header_logo">
+        <a href="#"
+          ><span><img src="./image_each/logo.png" alt="" /></span
+          >浅草観光ガイド</a
+        >
+      </div>
       <nav>
         <ul>
-          <li><a href="#about">浅草とは</a></li>
-          <li><a href="#festival"></a>イベント</li>
-
+          <li>
+            <a href="#about"
+              ><span><img src="./image_each/icon1.png" alt="" /></span
+              >浅草とは</a
+            >
+          </li>
           <li class="has-child">
-            <a href="#spot">観光名所</a>
+            <a href="#spot"
+              ><span><img src="./image_each/icon2.png" alt="" /></span
+              >観光名所</a
+            >
             <ul>
               <li><a href="#">文化・体験</a></li>
               <li><a href="#">食</a></li>
               <li><a href="#">穴場</a></li>
             </ul>
           </li>
+
           <li class="has-child">
-            <a href="#course">浅草散歩</a>
+            <a href="#course"
+              ><span><img src="./image_each/icon3.png" alt="" /></span
+              >浅草さんぽ</a
+            >
             <ul>
-              <li><a href="">定番コース</a></li>
-              <li><a href="">食満喫コース</a></li>
-              <li><a href="">体験コース</a></li>
-              <li><a href="">穴場コース</a></li>
+              <li><a href="#">定番コース</a></li>
+              <li><a href="#">食満喫コース</a></li>
+              <li><a href="#">体験コース</a></li>
+              <li><a href="#">穴場コース</a></li>
             </ul>
           </li>
-          <li><a href="#news">お知らせ</a></li>
-          <li><a href="#">アクセス</a></li>
+          <li>
+            <a href="#"
+              ><span><img src="./image_each/icon4.png" alt="" /></span
+              >イベント</a
+            >
+          </li>
+          <li>
+            <a href="#news"
+              ><span><img src="./image_each/icon5.png" alt="" /></span
+              >お知らせ</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span><img src="./image_each/icon6.png" alt="" /></span
+              >アクセス</a
+            >
+          </li>
         </ul>
       </nav>
-      <div class="header_slider">
+    </header>
+    <main>
+      <section id="main_slider">
         <div class="slider_content">
           <div class="slider_item">
             <div class="slider_img">
               <img src="./image_each/main1.png" alt="" />
             </div>
-            <button class="slider_button">コース</button>
+            <a href="#" class="slider_button">浅草定番コース ></a>
           </div>
           <div class="slider_item">
             <div class="slider_img">
               <img src="./image_each/main2.png" alt="" />
             </div>
-            <button class="slider_button">コース</button>
+            <a href="#" class="slider_button">コース</a>
           </div>
           <div class="slider_item">
             <div class="slider_img">
               <img src="./image_each/main3.png" alt="" />
             </div>
-            <button class="slider_button">コース</button>
+            <a href="#" class="slider_button">コース</a>
           </div>
           <div class="slider_item">
             <div class="slider_img">
               <img src="./image_each/main4.png" alt="" />
             </div>
-            <button class="slider_button">コース</button>
+            <a href="#" class="slider_button">コース</a>
           </div>
           <div class="slider_item">
             <div class="slider_img">
               <img src="./image_each/main5.png" alt="" />
             </div>
-            <button class="slider_button">コース</button>
+            <a href="#" class="slider_button">コース</a>
           </div>
           <div class="slider_item">
             <div class="slider_img">
               <img src="./image_each/main6.png" alt="" />
             </div>
-            <button class="slider_button">コース</button>
+            <a href="#" class="slider_button">コース</a>
           </div>
+          <!-- インジケーター -->
+          <ul class="indicator" id="indicator">
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+          </ul>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section id="about">
         <div class="about_content content">
           <div class="about_item">
@@ -122,7 +159,7 @@
         <div class="festival_content content">
           <h1 class="section_title">浅草のお祭り</h1>
           <div class="fes_item">
-            <p class="fes_title">浅草サンバカーニバル</p>
+            <p class="fes_title">浅草サンバ<br />カーニバル</p>
             <div class="fes_img">
               <img src="./image_each/event1.jpg" alt="" />
             </div>
@@ -132,7 +169,7 @@
                 地域の観光開発・活性化を目的に昭和56年から始まった、夏のフィナーレの
                 一大イベントです。近年は毎年50万人のお客様で賑わうにまでに成長しました。
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
           </div>
           <div class="fes_item">
@@ -146,7 +183,7 @@
                 江戸時代に八代将軍徳川吉宗が打ち上げた「両国川開きの花火」を起源とする
                 日本最古の花火大会。東京の夏の夜空を国内最大級20000発の花火が彩ります。
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
           </div>
           <div class="fes_item">
@@ -160,33 +197,35 @@
                 江戸風情を残しつつ勇壮且つ華やかな神輿渡御を主として、三日間に亘り
                 約百八十万人の人出を数える日本を代表する祭礼です。
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
           </div>
-          <button class="btn btn_big">年間イベントスケジュールはこちら</button>
+          <a href="#" class="btn btn_big">年間イベントスケジュールはこちら ></a>
         </div>
       </section>
       <section id="spot">
         <div class="spot_content content">
           <h1 class="section_title">観光名所</h1>
           <div class="spot_title">土地を訪ねる</div>
-          <div class="spot_item">
-            <div class="spot_img">
-              <img src="./image_each/sub1.png" alt="" />
+          <div class="spot_items">
+            <div class="spot_item">
+              <div class="spot_img">
+                <img src="./image_each/sub1.png" alt="" />
+              </div>
+              <p class="spot_text">文化・体験</p>
             </div>
-            <p class="spot_text">文化・体験</p>
-          </div>
-          <div class="spot_item">
-            <div class="spot_img">
-              <img src="./image_each/sub2.png" alt="" />
+            <div class="spot_item">
+              <div class="spot_img">
+                <img src="./image_each/sub2.png" alt="" />
+              </div>
+              <p class="spot_text">食</p>
             </div>
-            <p class="spot_text">食</p>
-          </div>
-          <div class="spot_item">
-            <div class="spot_img">
-              <img src="./image_each/sub3.png" alt="" />
+            <div class="spot_item">
+              <div class="spot_img">
+                <img src="./image_each/sub3.png" alt="" />
+              </div>
+              <p class="spot_text">穴場</p>
             </div>
-            <p class="spot_text">穴場</p>
           </div>
         </div>
       </section>
@@ -202,10 +241,10 @@
                 <img src="./image_each/content1.jpg" alt="" />
               </div>
               <p class="course_text">
-                浅草を1日で楽しむ観光モデルコースをご紹介！
+                浅草を1日で楽しむ観光モデルコースをご紹介！<br />
                 都内最古の寺院「浅草寺」を始めとした、浅草観光に欠かせない神社やお寺などを回る日帰りモデルコースをお届けします！インスタ映えスポット情報や半日で浅草からスカイツリーを巡るモデルコースもお届け！
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
             <div class="course_item">
               <h2 class="course_title">
@@ -215,22 +254,22 @@
                 <img src="./image_each/content2.jpg" alt="" />
               </div>
               <p class="course_text">
-                活気あふれる浅草寺の表参道「仲見世通り」
+                活気あふれる浅草寺の表参道「仲見世通り」<br />
                 香りにつられてついお参り前に寄り道したくなるおやつのお店が目白押しです。江戸時代から続く賑やかな商店街で美味しいものを巡るコースをご紹介します！
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
             <div class="course_item">
               <h2 class="course_title">気軽にものづくり体験コース</h2>
               <div class="course_img">
-                <img src="./image_each/content4.jpg" alt="" />
+                <img src="./image_each/content3.png" alt="" />
               </div>
               <p class="course_text">
-                【 張り子の絵付け体験】 だるま・招き猫・狐のお面を作ろう！
-                浅草で話題の日本文化体験カフェで縁起物の張り子をオリジナルデザインでペイントしてみませんか？
+                【 張り子の絵付け体験】 だるま・招き猫・狐のお面を作ろう！<br />
+                浅草で話題の日本文化体験カフェで縁起物の張り子をオリジナルデザインでペイントしてみませんか？<br />
                 張り子は中が空洞でとても軽いので、旅行のお土産としておすすめです♪
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
             <div class="course_item">
               <h2 class="course_title">
@@ -240,13 +279,13 @@
                 <img src="./image_each/content4.jpg" alt="" />
               </div>
               <p class="course_text">
-                『浅草文化観光センター』は夜景の穴場スポット！
+                『浅草文化観光センター』は夜景の穴場スポット！<br />
                 雷門の向かいに位置する、浅草の観光案内施設『浅草文化観光センター』。デートの締めくくりにぴったりな注目の穴場スポット。浅草ならではの情緒あふれる夜景にふたりで酔いしれてみては♪
               </p>
-              <button class="btn btn_small">詳しくはこちら</button>
+              <a href="#" class="btn btn_small">詳しくはこちら ></a>
             </div>
           </div>
-          <button class="btn btn_big">すべての観光コースはこちら</button>
+          <a href="#" class="btn btn_big">すべての観光コースはこちら ></a>
         </div>
       </section>
       <section id="news">
@@ -326,7 +365,7 @@
             </div>
             <div class="news_item">
               <div class="news_img">
-                <img src="./image_each/news6.jpg" alt="" />
+                <img src="./image_each/news6.png" alt="" />
               </div>
               <div class="news_texts">
                 <div class="news_info">
@@ -339,7 +378,7 @@
               </div>
             </div>
           </div>
-          <button class="btn btn_big">お知らせ一覧はこちら</button>
+          <a href="#" class="btn btn_big">お知らせ一覧はこちら ></a>
         </div>
       </section>
       <section id="theme">
@@ -391,21 +430,21 @@
       <div class="footer_content">
         <div class="footer_img"><img src="./image_each/logo.png" alt="" /></div>
         <div class="footer_list">
-          <a href="" class="list_item">よくあるご質問</a>
-          <a href="" class="list_item">お問い合わせ</a>
-          <a href="" class="list_item">パンフレット</a>
-          <a href="" class="list_item">アクセス情報</a>
-          <a href="" class="list_item">個人情報保護方針</a>
-          <a href="" class="list_item">サイトマップ</a>
+          <a href="#" class="list_item">よくあるご質問</a>
+          <a href="#" class="list_item">お問い合わせ</a>
+          <a href="#" class="list_item">パンフレット</a>
+          <a href="#" class="list_item">アクセス情報</a>
+          <a href="#" class="list_item">個人情報保護方針</a>
+          <a href="#" class="list_item">サイトマップ</a>
         </div>
         <div>
           <div class="footer_menu">
-            <a href="" class="menu_item">浅草とは</a>
-            <a href="" class="menu_item">四季のイベント</a>
-            <a href="" class="menu_item">観光名所</a>
-            <a href="" class="menu_item">浅草散歩</a>
-            <a href="" class="menu_item">アクセス</a>
-            <a href="" class="menu_item">お知らせ</a>
+            <a href="#" class="menu_item">浅草とは</a>
+            <a href="#" class="menu_item">四季のイベント</a>
+            <a href="#" class="menu_item">観光名所</a>
+            <a href="#" class="menu_item">浅草散歩</a>
+            <a href="#" class="menu_item">アクセス</a>
+            <a href="#" class="menu_item">お知らせ</a>
           </div>
           <div class="footer_corporate">
             <p>一般社団法人　浅草観光連盟</p>
@@ -414,10 +453,16 @@
           </div>
         </div>
 
-        <div class="footer_sns">
-          <img src="./image_each/Instagram_Glyph_Black.png" alt="x" />
-          <img src="./image_each/logo-black.png" alt="instagram" />
-          <img src="./image_each/icons8-facebook-480.png" alt="facebook" />
+        <div class="footer_sns_item">
+          <div class="footer_sns">
+            <img src="./image_each/Instagram_Glyph_Black.png" alt="x" />
+          </div>
+          <div class="footer_sns">
+            <img src="./image_each/logo-black.png" alt="instagram" />
+          </div>
+          <div class="footer_sns">
+            <img src="./image_each/icons8-facebook-480.png" alt="facebook" />
+          </div>
         </div>
       </div>
       <p class="copyright">
